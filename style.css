@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to buttom ,#dcdcdc 50% , #e9e9e9 50%);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main{
+    width: 300px;
+    height: max-content;
+    min-height: 300px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 30px 50px #5553;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+main form {
+    display: flex;
+    border: 1px solid #5553;
+   justify-content: space-between;
+   border-radius: 30px;
+
+
+}
+main form input , main form button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+main form input{
+    width: 80%;
+    background-color: transparent;
+    color: rgba(1, 1, 1, 0.2);
+    font-weight: 500;
+}
+
+main .result{
+    padding-top: 20px;
+    text-align: center;
+
+
+}
+
+main .result .name {
+    font-size: large;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+
+
+}
+
+main .temp img{
+    width: 150px;
+    filter: drop-shadow(0 0 10px 50 rgba(36, 36, 36, 0.2)); 
+
+}
+
+main .temp figcaption{
+    font-size: 3em;
+
+}
+
+main .desc {
+    padding: 10px 30px;
+
+}
+
+main ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+   
+}
+
+main li {
+    background-color: #f78a55;
+    padding: 20px 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-image: linear-gradient(to bottom, transparent 50%, #0003 50%);
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+}
+
+main li i {
+    font-size: 2em;
+    color: #fff;
+    display: block!important;
+    margin: 10px 0;
+}
+main li:nth-child(2) {
+    background-color: #b56291;
+}
+main li:nth-child(3) {
+    background-color: #48567b;
+}
+
+main .error{
+    animation: errorEffect 0.3s linear 1;
+}
+
+@keyframes errorEffect {
+    0%{
+        transform: translate(10px, 5px);
+    }
+    25%{
+        transform: translate(-5px, 0);
+    }
+    50%{
+        transform: translate(8px, 2px);
+    }
+    75%{
+        transform: translate(-2px, 5px);
+    }
+    100%{
+        transform: translate(0 , 0 );
+    }
+}
